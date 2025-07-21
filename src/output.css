@@ -23,6 +23,8 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
@@ -37,8 +39,11 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
+    --radius-xs: 0.125rem;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -189,6 +194,9 @@
   }
 }
 @layer utilities {
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
   .m-auto {
     margin: auto;
   }
@@ -249,6 +257,9 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -281,6 +292,9 @@
   }
   .w-7xl {
     width: var(--container-7xl);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
@@ -366,8 +380,17 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-xs {
+    border-radius: var(--radius-xs);
   }
   .rounded-l {
     border-top-left-radius: 0.25rem;
@@ -406,6 +429,9 @@
   .object-center {
     object-position: center;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -426,6 +452,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -489,6 +518,10 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
