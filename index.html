@@ -15,7 +15,8 @@
 
 
     <section class="h-auto max-w-7xl  mx-auto  ">
-        <nav class="flex justify-around items-center bg-blue-200 p-4  ">
+        <nav class="flex flex-col md:flex-row justify-around items-center gap-4 bg-blue-200 p-4">
+
             <div>
                 <h2 class="text-[#414040] font-bold flex items-center gap-2 ">
                     <img class="w-[45px] h-[45px]" src="images/business.png" alt="">Justice
@@ -38,6 +39,8 @@
 
 
     <main>
+
+
         <section class="bg-banner h-auto max-w-7xl mx-auto my-2 mt-5">
 
 
@@ -46,15 +49,19 @@
                 Lorem
                 Ipsum available, but the majority <br>have suffered alteration in some form, by injected humour.</p>
 
-            <div class="flex items-center justify-center gap-4 ">
-                <input class="bg-white h-16 w-2xl rounded-lg p-8 my-8" type="text" name="" id=""
+           <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+
+                <input class="bg-white h-16 w-full max-w-xl rounded-lg px-6 my-4" type="text" name="" id=""
                     placeholder="Search your service">
-                <button
-                    class="bg-amber-500 p-5 w-[150px] rounded-lg text-black font-semibold text-white">Search</button>
+                <button  class="bg-amber-500 p-5 w-[150px] rounded-lg font-semibold text-white mb-4 md:mb-0">Search</button>
 
             </div>
         </section>
-        <!-- the legal practise area-->
+
+
+
+
+
         <section class="mx-10 my-10 mt-5">
             <div class="h-auto max-w-7xl  mx-auto">
 
@@ -66,7 +73,7 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:grid-cols-3 ">
 
                     <div class="bg-blue-50 p-6 flex flex-col items-center text-center">
                         <img class="w-20 mb-4" src="images/criminal.png" alt="">
@@ -133,13 +140,16 @@
 
             </div>
         </section>
-        <!-- Client Say Section-->
+
+
+
         <section class=" h-auto max-w-7xl mx-auto my-2 mt-5">
 
             <div>
                 <div class="text-center">
                     <h2 class="text-[#414040] font-extrabold text-3xl">What Our Client Say</h2>
-                    <p class="text-[#707070] text-[16px] mt-4">There are many variations of passages of Lorem Ipsum
+                    <p class="text-gray-200 text-[16px] max-w-2xl mx-auto">
+                        There are many variations of passages of Lorem Ipsum
                         available, but the majority have <br>suffered alteration in some form, by injected humour.</p>
                 </div>
                 <div style="background-image: url('./images/slider-2.jpg');"
@@ -156,21 +166,22 @@
 
             </div>
 
-            </div>
+
         </section>
 
-        <!--Frequently Asked Section-->
+
 
         <section class="mt-5 max-w-7xl mx-auto my-2">
             <div class="text-center">
                 <h2 class="text-[#414040] font-extrabold text-3xl">Frequently Asked Any Questions</h2>
-                <p class="text-[#707070] text-[16px] mt-4">There are many variations of passages of Lorem Ipsum available, but the
+                <p class="text-[#707070] text-[16px] mt-4 mx-5">There are many variations of passages of Lorem Ipsum
+                    available, but the
                     majority have <br> suffered
                     alteration in some form, by injected humour.</p>
 
             </div>
 
-            <div class="flex justify-between items-center  mt-5">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8  mt-5">
 
                 <div class="flex flex-col justify-items-start gap-4 w-1/2">
                     <div class="bg-gray-200 shadow-md p-6 rounded-md ">
@@ -192,7 +203,7 @@
 
                     </div>
 
-                     <div class="bg-gray-200 shadow-md p-6 rounded-md ">
+                    <div class="bg-gray-200 shadow-md p-6 rounded-md ">
                         <div class="flex justify-between items-center text-center">
                             <h2 class="text-black font-extrabold">1. Are application fee waivers available?</h2>
                             <span><i class="fa-solid fa-plus"></i></span>
@@ -201,14 +212,14 @@
                     </div>
                 </div>
                 <div class="w-1/2">
-                       <img src="images/faq.png" alt="">
+                    <img src="images/faq.png" alt="">
                 </div>
 
             </div>
 
         </section>
 
-        <!--Frequently Asked Section-->
+
         <section class=" h-auto max-w-7xl mx-auto my-2">
             <div class="text-center mt-5">
                 <h2 class=" text-[#414040] font-extrabold text-2xl">Contuct With Us</h2>
@@ -216,9 +227,10 @@
                     available, but the majority have <br>suffered alteration in some form, by injected humour.</p>
             </div>
 
-            <div class="flex flex-row gap-10 mt-5">
+            <div class="flex flex-col lg:flex-row gap-10 mt-5 ">
 
-                <div class="grid grid-cols-2 gap-2.5">
+                <div class="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-2.5 mx-auto ">
+
                     <div class="bg-gray-100 p-6 rounded-md text-center">
                         <img class="mx-auto mb-4" src="images/location.png" alt="">
                         <h2>Address</h2>
@@ -274,15 +286,18 @@
     </main>
 
     <footer class="bg-[#111111] items-center justify-center ">
-        <section class="mt-20 flex justify-center items-center gap-20">
+        <section
+            class="px-20 mx-auto mt-5 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 max-w-7xl mx-auto px-6">
 
 
-            <div class="p-8">
+            <div class="p-8 w-full md:w-1/4">
+
                 <img src="images/logo.png" alt="">Justice</h1>
                 <p class="text-white">There are many variations of <br>passages of Lorem Ipsum <br>available, but the
                     majority have <br>suffered alteration in some <br>form, by injected humour.</p>
             </div>
-            <div class="p-8">
+            <div class="p-8 w-full md:w-1/4">
+
                 <h2 class="text-white font-extrabold">Usefull Link</h2>
                 <ul class="">
                     <li class="list-none "><a class="text-white" href="">Home</a></li>
@@ -293,7 +308,8 @@
                 </ul>
             </div>
 
-            <div class="p-8">
+            <div class="p-8 w-full md:w-1/4">
+
                 <h2 class="text-white font-extrabold">Contact Now</h2>
                 <p class="text-white">555 4th 5t NW, Washington <br>
                     DC 20530, United States</p>
@@ -303,7 +319,8 @@
                     info@gmail.com</p>
             </div>
 
-            <div class="p-8">
+            <div class="p-8 w-full md:w-1/4">
+
                 <h2 class="text-white font-extrabold">Subscribe</h2>
                 <p class="text-white">Subscribe for our latest & <br>Articles. We Won’t Give You Spam Mails</p>
 
